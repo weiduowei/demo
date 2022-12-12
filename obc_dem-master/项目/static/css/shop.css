@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(100vw/7.2);
+}
+
+.big-box {
+    background-color: #eee;
+    padding: 0 0.3rem;
+}
+
+
+/* 三点 */
+
+.black {
+    display: flex;
+    justify-content: space-between;
+    height: 1rem;
+    align-items: center;
+}
+
+.dian {
+    font-size: 0.3rem;
+    height: 100%;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dian1 {
+    display: inline-block;
+    width: 0.05rem;
+    height: 0.05rem;
+    background-color: #666;
+    margin: 0 0.1rem;
+    border-radius: 50%;
+}
+
+.right {
+    margin-left: 0.3rem;
+}
+
+.dian2 {
+    display: inline-block;
+    height: 0.1rem;
+    width: 0.1rem;
+    background-color: #666;
+    border-radius: 50%;
+}
+
+.top {
+    font-size: 0.3rem;
+    width: 1.7rem;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top img:nth-child(1) {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-left: 0.2rem
+}
+
+.address {
+    font-size: 0.2rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.01rem solid #666;
+    margin-left: 0.2rem;
+}
+
+.address img {
+    width: 0.2rem;
+}
+
+
+/* 全部 */
+
+.all {
+    height: 1rem;
+    width: 100%;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.3rem;
+}
+
+.all span:nth-child(1) {
+    color: red;
+}
+
+
+/* 商品 */
+
+.none {
+    display: none;
+    visibility: hidden;
+}
+
+.shop {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    padding: 0 0.3rem;
+}
+
+.shop1 {
+    height: 1rem;
+    width: 100%;
+    font-size: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.span2 {
+    font-size: 0.2rem;
+    color: #666;
+}
+
+.shop1 img {
+    width: 0.2rem;
+    margin-left: 1.2rem;
+}
+
+.shop2-1 img {
+    width: 2rem;
+    border-radius: 0.3rem;
+    margin-left: 0.2rem;
+}
+
+.shop2-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* shop2 -2*/
+
+.shop2 {
+    display: flex;
+}
+
+.shop2-2 {
+    margin-left: 0.2rem;
+    height: 2rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bor {
+    border-radius: 0.3rem;
+    background-color: #e6e6e6;
+    margin-top: 0.2rem;
+}
+
+.shop2-2 p {
+    font-size: 0.2rem;
+}
+
+.money1 {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.4rem;
+    color: red;
+}
+
+.yangjiao {
+    font-size: 0.4rem;
+    color: red;
+}
+
+.mach {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mach1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8rem;
+    height: 0.5rem;
+    border: 0.01rem solid #666;
+    border-radius: 0.2rem;
+}
+
+.many {
+    border-right: 0.01rem solid #666;
+}
+
+.jian {
+    border-right: 0.01rem solid #666;
+}
+
+.mach1 p {
+    width: 0.6rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top2 {
+    margin-top: 0.3rem;
+}
+
+
+/* 猜你喜欢 */
+
+.goods {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0.3rem;
+}
+
+.goods1 {
+    width: 3.1rem;
+    font-size: 0.2rem;
+    background-color: #fff;
+    margin-top: 0.2rem;
+    height: 4.3rem;
+    border-radius: 0.3rem;
+}
+
+.goods1 img {
+    width: 3.1rem;
+    border-radius: 0.2rem;
+}
+
+.goods1 p {
+    height: 0.3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.goods1 .hot {
+    background-color: red;
+    border-radius: 0.2rem;
+    font-size: 0.15rem;
+    display: inline-block;
+    width: 0.6rem;
+    text-align: center;
+    color: #fff;
+    margin-right: 0.1rem;
+}
+
+.goods1 p:nth-child(4) {
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #feeae8;
+    color: #fa3c2a;
+    border-radius: 0.2rem;
+    margin-top: 0.1rem;
+}
+
+.pp {
+    color: #f23030;
+    margin-top: 0.1rem;
+}
+
+.kua {
+    display: inline-block;
+    text-align: center;
+    line-height: 0.3rem;
+    height: 0.3rem;
+    border: 0.01rem solid red;
+}
+
+.money {
+    font-size: 0.25rem;
+}
+
+.pl {
+    margin-top: 0.2rem
+}
+
+.pl span {
+    color: #666;
+}
+
+.pl span:nth-child(2) {
+    margin-left: 0.2rem
+}
+
+.love {
+    width: 100%;
+    height: 1rem;
+    font-size: 0.3rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+
+/* 底部固定结算栏 */
+
+.foot {
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+}
+
+.check {
+    width: 1.2rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check label {
+    font-size: 0.2rem;
+    color: #666;
+}
+
+.total {
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total span:nth-child(1) {
+    font-size: 0.3rem;
+}
+
+.total1 {
+    font-size: 0.25rem;
+}
+
+.settlement {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-foot {
+    font-size: 0.35rem;
+    color: #fff;
+    height: 0.8rem;
+    width: 2rem;
+    background-color: red;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+
+/* 结算成功 */
+
+.succeed {
+    width: 5rem;
+    height: 3rem;
+    background-color: #fff;
+    position: fixed;
+    left: 15%;
+    top: 35%;
+    display: none;
+}
+
+.succeed1 {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.5rem
+}
+
+.succeed2 {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.4rem
+}
+
+
+/* 购物车 */
+
+.shopnone {
+    visibility: hidden;
+    display: none;
+}
+
+.goods {
+    padding-bottom: 1.5rem;
+}
+
+
+/* 最少选择一个 */
+
+.oneone {
+    width: 100%;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    display: none;
+}
+
+.smallone {
+    width: 3rem;
+    height: 0.6rem;
+    border: 0.01rem solid #f5503a;
+    color: red;
+    text-align: center;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 0.3rem;
+}
+
+
+/* 删除 */
+
+.dui {
+    display: inline-block;
+    width: 1rem;
+    height: 0.5rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.5rem;
+    background-color: red;
+    border-radius: 0.2rem;
+    color: #fff;
+    margin-left: 0.5rem;
+}

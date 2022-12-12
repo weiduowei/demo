@@ -1,0 +1,432 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(100vw/7.2);
+}
+
+
+/* 订单页大盒子开始 */
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 6, 6, .1);
+}
+
+.orders {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+
+/* 地址盒子 */
+
+.orders-1 {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    background-color: #fff;
+    padding: 0 0.3rem;
+    border-bottom: 0.1rem solid red;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 6rem;
+}
+
+.address span {
+    font-size: 0.2rem;
+}
+
+textarea {
+    font-size: 0.4rem;
+}
+
+.address p {
+    font-size: 0.4rem;
+    margin: 0.2rem 0;
+    width: 100%;
+    height: 0.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.more {
+    color: #666;
+    font-size: 0.4rem;
+}
+
+.left {
+    margin-right: 0.2rem;
+}
+
+
+/* 第二个盒子 */
+
+.orders-2 {
+    width: 100%;
+    /* height: rem; */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    padding: 0 0.3rem;
+    margin: 0.3rem 0;
+}
+
+.zy {
+    height: 0.5rem;
+    width: 100%;
+    line-height: 0.5rem;
+}
+
+.zy span:nth-child(1) {
+    font-size: 0.3rem;
+    font-weight: 700;
+}
+
+.zy span:nth-child(2) {
+    font-size: 0.2rem;
+}
+
+.img {
+    padding-top: 1rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-right {
+    flex: 1;
+    height: 2rem;
+    padding-left: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.money {
+    font-size: 0.4rem;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    flex: 1
+}
+
+.img div img {
+    width: 1.5rem;
+    border-radius: 0.2rem;
+}
+
+.img div {
+    font-size: 0.2rem;
+}
+
+.right {
+    font-size: 0.4rem;
+    margin-left: 0.2rem;
+}
+
+.money1 {
+    font-weight: 700;
+    font-size: 0.4rem;
+    color: red;
+}
+
+.mach1 {
+    display: flex;
+    font-size: 0.3rem;
+}
+
+.mach1 p {
+    width: 0.5rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+.mach1 .jian {
+    font-weight: 700;
+    font-size: 0.4rem;
+    color: #666;
+}
+
+.mach1 .jia {
+    font-weight: 700;
+    font-size: 0.4rem;
+    color: #333;
+}
+
+.mach1 .many {
+    font-weight: 700;
+    font-size: 0.3rem;
+    color: #333;
+}
+
+
+/* 配送 */
+
+.ps {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.ps div {
+    font-size: 0.2rem
+}
+
+.ps .right {
+    font-size: 0.4rem;
+    margin-left: 0.2rem;
+}
+
+.ps-1 {
+    display: flex;
+}
+
+
+/* 支付金额优惠券 */
+
+.pay {
+    font-size: 0.2rem;
+    width: 100%;
+    /* height: rem; */
+    border-radius: 0.3rem;
+    background-color: #fff;
+    padding: 0 0.3rem;
+    margin: 0.3rem 0;
+}
+
+.pay1 {
+    height: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay2 {
+    height: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay3 {
+    height: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay1 div {
+    line-height: 0.8rem;
+}
+
+.pay2 div {
+    line-height: 0.8rem;
+}
+
+.pay3 div {
+    line-height: 0.8rem;
+}
+
+
+/* 头部导航栏 */
+
+.top {
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 0.3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+}
+
+.black {
+    font-size: 0.4rem;
+    margin-right: 2.5rem;
+}
+
+
+/* 底部提交栏 */
+
+.bottom {
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.3rem;
+}
+
+.All {
+    font-size: 0.3rem;
+    color: red;
+}
+
+.All .A1 {
+    font-size: 0.5rem;
+    color: red;
+}
+
+.btn {
+    width: 2rem;
+    height: 0.7rem;
+    background-color: red;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+/* 结算成功 */
+
+.succeed {
+    width: 5rem;
+    height: 3rem;
+    background-color: #e6e6e6;
+    position: fixed;
+    left: 15%;
+    top: 35%;
+    display: none;
+    border-radius: 0.3rem
+}
+
+.succeed1 {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.5rem;
+    line-height: 2rem;
+}
+
+.succeed2 {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.4rem
+}
+
+
+/* 隐藏不显示文本 */
+
+.none {
+    display: none;
+    visibility: hidden;
+}
+
+
+/* 调宽 */
+
+.js {
+    width: 4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* 三级联动 */
+
+.masks {
+    width: 100%;
+    font-size: 0.3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 20%;
+    padding: 0.5rem 0;
+    z-index: 9;
+    visibility: hidden;
+}
+
+select {
+    width: 2.1rem;
+}
+
+textarea {
+    margin-top: 0.2rem;
+    width: 6.3rem;
+}
+
+.masks span {
+    display: inline-block;
+    width: 3rem;
+    height: 0.7rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    line-height: 0.7rem;
+    background-color: orange;
+    margin-top: 0.2rem;
+}
+
+.mb {
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 6, 6, .5);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: none;
+}
+
+
+/* 是否支付 */
+
+.all {
+    position: absolute;
+    width: 100%;
+    height: 0.7rem;
+    display: flex;
+    bottom: 0;
+}
+
+.all span {
+    display: inline-block;
+    height: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+}
+
+.yes {
+    width: 50%;
+    background-color: red;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.no {
+    flex: 1;
+    background-color: orange;
+    border-bottom-right-radius: 0.3rem;
+}

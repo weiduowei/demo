@@ -1,0 +1,532 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+.big-box-login {
+    position: relative;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+html {
+    font-size: calc(100vw/7.2);
+}
+
+.black {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(../img/jd-img/black.png) no-repeat;
+    background-size: 100%;
+}
+
+.login-top {
+    width: 100%;
+    height: 0.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.login-top span {
+    font-size: 0.35rem;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+    height: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0.5rem;
+}
+
+
+/* 登录账号框 */
+
+.account {
+    width: 100%;
+    height: 0.8rem;
+    display: flex;
+    margin-top: 0.6rem;
+    border-bottom: 0.01rem solid #e7e7e7;
+}
+
+.region {
+    font-size: 0.3rem;
+    width: 1.2rem;
+    height: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.region span {
+    margin-right: 0.1rem;
+}
+
+.region img {
+    width: 0.2rem;
+    height: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+.region-input {
+    flex: 1;
+    height: 0.8rem;
+    border: none;
+    border-bottom: 0.01rem solid #e7e7e7;
+}
+
+.region2 {
+    font-size: 0.3rem;
+    width: 1.2rem;
+    height: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 密码输入框 */
+
+.password {
+    width: 100%;
+    height: 0.8rem;
+    display: flex;
+    margin-top: 0.3rem;
+    border-bottom: 0.01rem solid #e7e7e7;
+}
+
+.password-input {
+    width: 70%;
+    height: 0.8rem;
+    border: none;
+    border-bottom: 0.01rem solid #e7e7e7;
+}
+
+.fetch {
+    flex: 1;
+    height: 0.8rem;
+    font-size: 0.25rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.fetch-box {
+    width: 100%;
+    height: 0.5rem;
+    border-left: 0.01rem solid #666;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+
+/* 点击登录 */
+
+.cilck-login {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 0.7rem;
+    border-radius: 0.2rem;
+    background-color: #febbb3;
+    font-size: 0.3rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.7rem;
+}
+
+
+/* 密码登录/注册 */
+
+.handoff div {
+    font-size: 0.25rem;
+    color: #666;
+}
+
+.handoff {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+}
+
+
+/* 其他方式登录 */
+
+.other-login {
+    height: 0.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.other-login span {
+    font-size: 0.25rem;
+    color: #cccccc;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.xian1 {
+    flex: 0.5;
+    height: 0.01rem;
+    border: 0.01rem solid #e7e7e7;
+}
+
+.xian2 {
+    flex: 0.5;
+    height: 0.01rem;
+    border: 0.01rem solid #e7e7e7;
+}
+
+
+/* qq,微信,苹果 */
+
+.qq-wx-apple {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.qq-wx-apple img {
+    width: 0.8rem;
+    margin: 0 0.3rem;
+}
+
+
+/* 账号密码错误则提示 */
+
+.tip {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    color: red;
+    background-color: #fff;
+    font-size: 0.3rem;
+    position: fixed;
+    top: 5rem;
+    display: none;
+}
+
+
+/* 用户协议 */
+
+.agreement {
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agreement label {
+    font-size: 0.25rem;
+    margin-top: 0.3rem;
+}
+
+
+/* 勾选协议 */
+
+.xy-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    display: none;
+}
+
+.xy {
+    height: 1rem;
+    width: 3rem;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+}
+
+.xy span {
+    font-size: 0.25rem;
+    color: #fff;
+}
+
+
+/* 查漏补缺 */
+
+
+/* 
+.fetch-box {
+    display: none;
+} */
+
+.fetch-box2 {
+    width: 100%;
+    height: 0.5rem;
+    border-left: 0.01rem solid #666;
+    text-align: center;
+    line-height: 0.5rem;
+    display: none;
+}
+
+
+/* 协议页面 */
+
+.xyym {
+    display: none;
+}
+
+.xy33 {
+    position: fixed;
+    top: 0;
+}
+
+.inner {
+    margin-top: 2rem;
+    font-size: 0.25rem;
+    padding: 0 0.3rem;
+    line-height: 0.5rem;
+}
+
+.black1 {
+    margin-left: 0.3rem;
+}
+
+
+/* 注册协议 */
+
+
+/* 大蒙版 */
+
+.mb {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 3, 3, .5);
+    display: none;
+}
+
+.zcxy {
+    width: 80%;
+    height: 7rem;
+    position: fixed;
+    bottom: 26%;
+    left: 10%;
+    border-radius: 0.3rem;
+    background-color: #fff;
+}
+
+.zcxy1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 0.35rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.zcxy-bot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    border-top: 0.01rem solid #666;
+}
+
+.ty {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.25rem;
+    padding: 0 0.3rem;
+}
+
+.ty span a {
+    text-decoration: #3b7adb;
+    text-decoration: underline;
+    color: #3b7adb;
+}
+
+.ty1 {
+    height: 1rem;
+    border-top: 0.01rem solid #666;
+    display: flex;
+}
+
+.no-ty {
+    width: 50%;
+    height: 1rem;
+    font-size: 0.35rem;
+    color: #666;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.ty2 {
+    width: 50%;
+    height: 0.97rem;
+    font-size: 0.35rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.97rem;
+    background-color: red;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.midle {
+    width: 100%;
+    font-size: 0.25rem;
+    position: absolute;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    height: 2.7rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    line-height: 0.4rem;
+    margin-top: 1.2rem;
+}
+
+.midle p span {
+    text-decoration: underline;
+}
+
+
+/* 注册页面 */
+
+.phone-enroll {
+    padding: 0 0.3rem;
+    display: none;
+}
+
+#next {
+    margin-top: 1.4rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    line-height: 1rem;
+}
+
+
+/* 第二蒙版 */
+
+.mb2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, .5);
+    display: none;
+}
+
+.mb-box {
+    width: 80%;
+    height: 6rem;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    background-color: #fff;
+}
+
+.mb-box-1 {
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 0.3rem;
+}
+
+.mb-box-2 {
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.no-yes {
+    width: 100%;
+    height: 1rem;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    border-top: 0.01rem solid #666;
+}
+
+.no {
+    height: 1rem;
+    width: 50%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.5rem;
+}
+
+.yes {
+    height: 1rem;
+    width: 50%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.5rem;
+    border-left: 0.01rem solid #666;
+    background-color: red;
+}
+
+
+/* ps */
+
+.ps {
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.ps li {
+    font-size: 0.3rem;
+}
+
+
+/* 账号存在则提示 */
+
+.zhcz {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    color: red;
+    background-color: #fff;
+    font-size: 0.3rem;
+    position: fixed;
+    top: 4rem;
+    padding-right: 0.5rem;
+    display: none;
+}
+
+
+/* 注册成功提示 */
+
+.zhcz {
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    color: red;
+    background-color: #fff;
+    font-size: 0.3rem;
+    position: fixed;
+    top: 4rem;
+    padding-right: 0.5rem;
+    display: none;
+}
